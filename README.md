@@ -18,6 +18,7 @@ et de consulter l'historique par numéro de série.
 
 ## 🏗️ Architecture
 liste_reparations_backend/
+
 ├── app.py ← Factory pattern (create_app)
 ├── config.py ← Config Dev / Prod / Test
 ├── extensions.py ← SQLAlchemy, Migrate, CORS, Marshmallow
