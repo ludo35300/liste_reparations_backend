@@ -1,0 +1,86 @@
+# Venv et environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pip cache et logs
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.pytest_cache/
+pylint_report.txt
+pylint_report.json
+mypy_cache/
+.dmypy.json
+dmypy.json
+
+# BDD et données sensibles
+*.db
+*.sqlite
+*.sqlite3
+reparations*.db
+*.db-journal
+*.log
+logs/
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# IDEs et éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Système
+.gitattributes
+.gitmodules
