@@ -3,11 +3,16 @@ from models import Reparation, PieceChangee
 from datetime import datetime
 
 def creer_reparation(data: dict) -> Reparation:
+    # La date peut arriver soit en str soit déjà en datetime.date (selon Marshmallow)
+    date_rep = data['date_reparation']
+    if isinstance(date_rep, str):
+        date_rep = datetime.strptime(date_rep, '%d/%m/%Y').date()
+        
     rep = Reparation(
         numero_serie    = data['numero_serie'].strip().upper(),
         machine_type    = data.get('machine_type', ''),
         technicien      = data.get('technicien', ''),
-        date_reparation = datetime.strptime(data['date_reparation'], '%d/%m/%Y').date(),
+        date_reparation = date_rep,
         notes           = data.get('notes', '')
     )
     db.session.add(rep)

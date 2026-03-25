@@ -5,7 +5,8 @@ from .piece_schema import PieceChangeeSchema
 
 class ReparationSchema(marshmallow.SQLAlchemyAutoSchema):
     pieces = fields.List(fields.Nested(PieceChangeeSchema), dump_default=[])
-
+    date_reparation = fields.Date(format='%d/%m/%Y')
+    
     class Meta:
         model = Reparation
         load_instance = True
