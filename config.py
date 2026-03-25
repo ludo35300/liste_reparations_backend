@@ -6,6 +6,7 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     MAX_CONTENT_LENGTH = 10 * 1024 * 1024  # 10MB max upload
+    JSON_ENSURE_ASCII = False # Permet d'afficher les caractères spéciaux correctement dans les réponses JSON
 
 class DevelopmentConfig(Config):
     DEBUG = True
