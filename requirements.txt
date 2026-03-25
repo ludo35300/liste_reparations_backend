@@ -7,3 +7,4 @@ marshmallow-sqlalchemy
 opencv-python
 numpy
 pillow
+#pip install easyocr --no-cache-dir
