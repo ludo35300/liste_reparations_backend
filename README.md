@@ -173,8 +173,7 @@ curl http://localhost:5000/api/stats
 
 ## 👤 Auteur
 
-**Ludo** — Technicien réparation machines à café  
-📍 Caen, Normandie
+**Ludo35300** 
 
 ---
 
